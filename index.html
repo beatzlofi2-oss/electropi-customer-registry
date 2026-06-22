@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ElectroPi Customer Complaint Registry</title>
+  <title>ElectroPi.in Consumer Action & Evidence Collection Portal</title>
+
   <style>
     body {
       margin: 0;
@@ -12,47 +14,62 @@
       color: #1f2937;
       line-height: 1.6;
     }
+
     header {
-      background: #111827;
+      background: linear-gradient(135deg, #111827, #1f2937);
       color: white;
-      padding: 45px 20px;
+      padding: 52px 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 34px;
+      font-size: 36px;
     }
+
     header p {
-      max-width: 850px;
-      margin: 12px auto 0;
+      max-width: 900px;
+      margin: 14px auto 0;
       color: #e5e7eb;
+      font-size: 17px;
     }
+
     main {
-      max-width: 1050px;
+      max-width: 1080px;
       margin: auto;
-      padding: 24px 16px 50px;
+      padding: 26px 16px 55px;
     }
+
     .card, .notice {
       background: white;
       border: 1px solid #d9dee8;
       border-radius: 14px;
-      padding: 22px;
+      padding: 23px;
       margin: 18px 0;
       box-shadow: 0 4px 14px rgba(0,0,0,0.05);
     }
+
     .notice {
       background: #fff7ed;
       border-color: #fed7aa;
     }
+
+    .important {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 16px;
     }
+
     h2 {
       margin-top: 0;
       color: #111827;
     }
+
     .button {
       display: inline-block;
       background: #b42318;
@@ -63,35 +80,52 @@
       font-weight: bold;
       margin-top: 8px;
     }
+
     .button:hover {
       background: #8f1d14;
     }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
       background: white;
     }
+
     th, td {
       border: 1px solid #d9dee8;
       padding: 10px;
       text-align: left;
       vertical-align: top;
     }
+
     th {
       background: #f3f4f6;
       width: 34%;
     }
+
     .muted {
       color: #5b6472;
       font-size: 14px;
     }
+
+    .tag {
+      display: inline-block;
+      background: #f3f4f6;
+      border: 1px solid #d1d5db;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin: 4px 4px 4px 0;
+      font-size: 14px;
+    }
+
     footer {
       text-align: center;
       color: #5b6472;
       padding: 24px;
       font-size: 14px;
     }
+
     a {
       color: #1d4ed8;
     }
@@ -99,84 +133,88 @@
 </head>
 
 <body>
+
   <header>
-    <h1>ElectroPi Customer Complaint Registry</h1>
+    <h1>ElectroPi.in Customer Complaint & Evidence Registry</h1>
     <p>
-      A public evidence-collection initiative for customers reporting order fulfillment,
-      refund, account access, and customer support issues relating to ElectroPi.
+      A public documentation initiative for customers who wish to report order delivery,
+      refund, payment, account access, or customer support issues connected with ElectroPi.in.
     </p>
   </header>
 
   <main>
+
     <section class="notice">
-      <strong>Important:</strong> This registry collects customer-submitted experiences and supporting evidence.
-      Inclusion in this registry does not by itself prove fraud, criminal conduct, or legal liability.
-      Submissions are treated as customer experiences and allegations unless independently verified.
+      <strong>Important Notice:</strong>
+      This website is meant to collect customer-submitted complaints and supporting evidence.
+      A complaint submitted here is treated as a customer allegation unless independently verified.
+      This registry does not declare fraud, criminal conduct, or legal liability.
+    </section>
+
+    <section class="card important">
+      <h2>Submit Your Complaint</h2>
+      <p>
+        If you placed an order on <strong>ElectroPi.in</strong> and faced issues such as
+        non-delivery, refund delay, no response from support, account access problems,
+        or payment-related concerns, you can submit your experience using the form below.
+      </p>
+
+      <p>
+        The purpose of this form is to collect organized evidence from affected customers so
+        that recurring complaint patterns can be understood and, where appropriate, affected
+        customers may use the records for consumer protection or dispute resolution channels.
+      </p>
+
+      <a class="button"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSeW6sh92MfuW8M3-9KoHzD8x3X69Y1mNNODjV_TK1RA6_fviA/viewform?usp=dialog"
+         target="_blank"
+         rel="noopener noreferrer">
+        Submit Complaint / Evidence
+      </a>
+
+      <p class="muted">
+        Please submit only truthful information. Screenshots, invoices, payment receipts,
+        emails, order details, and refund communication help make your submission stronger.
+      </p>
     </section>
 
     <section class="card">
-      <h2>Purpose of This Registry</h2>
+      <h2>Why This Registry Exists</h2>
       <p>
-        Multiple customers have publicly reported concerns regarding ElectroPi order fulfillment,
-        refund processing, account access, and customer support responsiveness.
+        Several customers have reported concerns relating to ElectroPi.in, including order
+        fulfillment delays, refund delays, difficulty contacting support, and account-related
+        issues. This registry provides a structured way to collect and organize those experiences.
       </p>
-      <p>This registry has been created to:</p>
+
+      <p>This initiative aims to:</p>
       <ul>
-        <li>Document unresolved customer complaints.</li>
-        <li>Identify recurring patterns in order fulfillment, refund delays, and customer support.</li>
-        <li>Collect supporting evidence from affected customers.</li>
-        <li>Prepare consolidated evidence for submission to payment processors, consumer authorities, regulators, or legal representatives where appropriate.</li>
+        <li>Collect customer complaints in one organized place.</li>
+        <li>Preserve supporting evidence such as invoices, receipts, and communication records.</li>
+        <li>Identify repeated patterns in delivery, refund, and support-related issues.</li>
+        <li>Help affected customers prepare better documentation for escalation if required.</li>
       </ul>
     </section>
-
-    <div class="grid">
-      <section class="card">
-        <h2>Submit Your Experience</h2>
-        <p>
-          If you placed an order with ElectroPi and experienced non-delivery, refund delay,
-          account access issues, or lack of response from customer support, please submit your
-          experience with supporting evidence.
-        </p>
-
-        <a class="button"
-           href="https://docs.google.com/forms/d/e/1FAIpQLSeW6sh92MfuW8M3-9KoHzD8x3X69Y1mNNODjV_TK1RA6_fviA/viewform?usp=dialog"
-           target="_blank"
-           rel="noopener noreferrer">
-          Submit Complaint Form
-        </a>
-
-        <p class="muted">
-          Evidence such as invoices, order confirmations, payment screenshots, email correspondence,
-          refund requests, and account access screenshots is strongly encouraged.
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>Contact</h2>
-        <p>
-          For follow-up or supporting information, contact:
-        </p>
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:beatzlofi2@gmail.com">beatzlofi2@gmail.com</a>
-        </p>
-        <p class="muted">
-          Please share only factual information and available evidence.
-        </p>
-      </section>
-    </div>
 
     <section class="card">
       <h2>Publicly Available Merchant Information</h2>
       <p class="muted">
-        The following information is compiled from publicly available company records, website disclosures,
-        invoices, and customer documentation. It is provided for identification and complaint-routing purposes.
+        The following information is compiled from publicly available company records,
+        website disclosures, invoices, customer documentation, and related public references.
+        It is provided for identification and complaint-routing purposes only.
       </p>
 
       <table>
         <tr>
-          <th>Trading / Website Name</th>
-          <td>ElectroPi</td>
+          <th>Website / Trading Name</th>
+          <td>ElectroPi.in</td>
+        </tr>
+        <tr>
+          <th>Website</th>
+          <td>
+            <a href="https://electropi.in/" target="_blank" rel="noopener noreferrer">
+              https://electropi.in/
+            </a>
+          </td>
         </tr>
         <tr>
           <th>Legal Entity Disclosed</th>
@@ -184,7 +222,10 @@
         </tr>
         <tr>
           <th>Associated MCA Company Name Found</th>
-          <td>TECHIN MART PRIVATE LIMITED / Circuit Pulse Private Limited records associated with CIN U52609HR2019PTC083645</td>
+          <td>
+            TECHIN MART PRIVATE LIMITED / Circuit Pulse Private Limited records associated
+            with CIN U52609HR2019PTC083645
+          </td>
         </tr>
         <tr>
           <th>CIN</th>
@@ -193,10 +234,6 @@
         <tr>
           <th>GSTIN</th>
           <td>06AAHCT6088P1ZH</td>
-        </tr>
-        <tr>
-          <th>Website</th>
-          <td>electropi.in</td>
         </tr>
         <tr>
           <th>Support Email Disclosed</th>
@@ -215,43 +252,108 @@
           <td>Shikha Kutleria, Alok Dwivedi</td>
         </tr>
         <tr>
-          <th>Payment Gateway Observed</th>
+          <th>Payment Service Provider Observed</th>
           <td>Cashfree Payments</td>
         </tr>
       </table>
+
+      <p class="muted">
+        Note: The information above should be independently verified before being relied upon
+        in legal, regulatory, financial, or official proceedings.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>What Evidence Should You Submit?</h2>
+      <p>
+        Strong evidence helps verify the complaint and understand the issue clearly.
+        Customers are encouraged to submit:
+      </p>
+
+      <ul>
+        <li>Order confirmation or invoice from ElectroPi.in.</li>
+        <li>Payment receipt, UPI screenshot, card statement, or bank statement entry.</li>
+        <li>Email or support-ticket communication.</li>
+        <li>Refund request screenshots or refund status communication.</li>
+        <li>Courier tracking details, if available.</li>
+        <li>Account login or order-status screenshots, if relevant.</li>
+      </ul>
     </section>
 
     <div class="grid">
       <section class="card">
-        <h2>What Evidence Helps?</h2>
-        <ul>
-          <li>Invoice or order confirmation.</li>
-          <li>Payment receipt or bank/card statement screenshot.</li>
-          <li>Email or support-ticket screenshots.</li>
-          <li>Refund request screenshots.</li>
-          <li>Website/account access issue screenshots.</li>
-          <li>Delivery or courier tracking screenshots, if any.</li>
-        </ul>
+        <h2>Common Issues You Can Report</h2>
+        <span class="tag">Order not delivered</span>
+        <span class="tag">Refund delayed</span>
+        <span class="tag">No support response</span>
+        <span class="tag">Account access issue</span>
+        <span class="tag">Payment issue</span>
+        <span class="tag">Incorrect order status</span>
+
+        <p class="muted">
+          You may still submit your complaint even if your issue is not listed above.
+        </p>
       </section>
 
       <section class="card">
-        <h2>How Submissions Are Used</h2>
-        <ul>
-          <li>Submissions are reviewed before any public use.</li>
-          <li>Personal information will not be published without consent.</li>
-          <li>Anonymized complaint data may be used for statistics and escalation.</li>
-          <li>False, abusive, duplicate, or unsupported submissions may be removed.</li>
-        </ul>
+        <h2>Contact for Follow-up</h2>
+        <p>
+          For follow-up information, supporting documents, or correction requests, contact:
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:beatzlofi2@gmail.com">beatzlofi2@gmail.com</a>
+        </p>
+        <p class="muted">
+          Please avoid sending abusive, false, or defamatory content. Share only factual details
+          and evidence available to you.
+        </p>
       </section>
     </div>
 
     <section class="card">
-      <h2>Suggested Escalation Routes</h2>
-      <p>
-        Affected customers may consider contacting the merchant, the payment gateway used for the transaction,
-        their bank or card issuer, the National Consumer Helpline, or the appropriate consumer dispute forum.
-        This website is not legal advice.
+      <h2>How Submissions May Be Used</h2>
+      <ul>
+        <li>To review and organize customer complaints.</li>
+        <li>To identify recurring complaint patterns.</li>
+        <li>To prepare anonymized complaint summaries.</li>
+        <li>To help affected customers understand possible escalation routes.</li>
+        <li>To support evidence-based communication with relevant consumer or payment-related channels where appropriate.</li>
+      </ul>
+
+      <p class="muted">
+        Personal information will not be published without consent. Sensitive details may be
+        redacted before any public summary is prepared.
       </p>
+    </section>
+
+    <section class="card">
+      <h2>Recommended Escalation Steps for Customers</h2>
+      <p>
+        Before or after submitting your complaint here, affected customers may consider the following steps:
+      </p>
+
+      <ol>
+        <li>Contact ElectroPi.in support and keep written proof of communication.</li>
+        <li>Request a clear delivery or refund status by email.</li>
+        <li>
+          If payment was processed through <strong>Cashfree Payments</strong>, customers may also
+          consider contacting Cashfree and providing transaction details for review.
+        </li>
+        <li>
+          Contact your bank, card issuer, UPI app, or payment provider regarding transaction
+          disputes where applicable.
+        </li>
+        <li>File a complaint with the National Consumer Helpline.</li>
+        <li>Use the e-Daakhil portal for consumer dispute filing if the issue remains unresolved.</li>
+      </ol>
+
+      <p class="muted">
+        Some customers have reported that payments were processed through Cashfree Payments.
+        Customers may wish to retain transaction IDs, payment confirmations, invoices,
+        refund requests, and communication records when raising a payment-related inquiry.
+      </p>
+
       <p>
         <a href="https://consumerhelpline.gov.in/" target="_blank" rel="noopener noreferrer">
           National Consumer Helpline
@@ -261,21 +363,62 @@
           e-Daakhil Consumer Complaint Portal
         </a>
       </p>
+
+      <p class="muted">
+        This website does not provide legal advice. Customers should make their own decision
+        or consult a qualified professional where necessary.
+      </p>
     </section>
 
     <section class="card">
+      <h2>Data Privacy Statement</h2>
+      <p>
+        Submitted information is used only for complaint documentation, evidence organization,
+        and customer-supportive escalation purposes. Personal details, payment information,
+        addresses, phone numbers, and private documents will not be publicly published without consent.
+      </p>
+      <p>
+        Customers are encouraged to blur or redact unnecessary sensitive information before submitting,
+        while keeping order ID, payment proof, dates, and communication history readable.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>What This Registry Is Not</h2>
+      <ul>
+        <li>This registry is not a court, regulator, or law enforcement body.</li>
+        <li>It does not make final findings of fraud, guilt, or legal liability.</li>
+        <li>It does not provide legal, financial, or regulatory advice.</li>
+        <li>It is a documentation and evidence-collection initiative for affected customers.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Updates</h2>
+      <ul>
+        <li><strong>22 June 2026:</strong> Registry page updated for clearer complaint and evidence submission.</li>
+        <li>Merchant information moved near the top for easier identification.</li>
+        <li>Cashfree Payments added as an observed payment service provider for payment-related escalation.</li>
+      </ul>
+    </section>
+
+    <section class="notice">
       <h2>Disclaimer</h2>
       <p>
         This website documents customer-submitted experiences and publicly available information.
-        It does not make any final determination regarding fraud, criminal conduct, or legal liability.
-        All information should be independently verified before being relied upon in legal, regulatory,
-        or financial proceedings.
+        Complaints are treated as allegations unless independently verified. Nothing on this website
+        should be interpreted as a final determination of fraud, criminal conduct, or legal liability.
+        All information should be independently verified before being used in legal, regulatory,
+        financial, or official proceedings.
       </p>
     </section>
+
   </main>
 
   <footer>
-    ElectroPi Customer Complaint Registry · Evidence-based consumer documentation initiative
+    ElectroPi.in Customer Complaint & Evidence Registry · Evidence-based consumer documentation initiative
   </footer>
+
 </body>
 </html>
+```
